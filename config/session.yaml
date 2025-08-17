@@ -1,0 +1,4 @@
+session:
+  max_turns: 5
+  termination_condition: "APPROVE"
+  prompt: "What is the meaning of suffering in human life?"

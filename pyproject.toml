@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "polylogue"
+version = "0.1.0"
+description = "A YAML-driven multi-agent conversation framework"
+authors = [{ name = "Praful Srivastava", email = "prafulsrivastava2021@gmail.com" }]
+requires-python = ">=3.10"
+dependencies = [
+    "python-dotenv>=1.0.1",
+    "PyYAML>=6.0",
+    "pydantic>=2.0",
+    "autogen-core>=0.4.9.2",
+    "autogen-ext[openai]>=0.4.9.2",
+    "autogen-agentchat>=0.4.9.2",
+    "langchain>=0.1",
+    "langchain-community>=0.3.20",
+    "openai>=1.68.2",
+    "tiktoken>=0.4.0",
+    "fastapi>=0.111.0",   # 🚨 add this if you’re exposing HTTP endpoints
+    "uvicorn>=0.30.0",    # 🚨 needed to run your app
+]
+
+
+[tool.setuptools]
+packages = ["polylogue"]
+
+
+[project.scripts]
+polylogue = "polylogue.app.main:main_entry"

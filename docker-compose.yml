@@ -1,0 +1,26 @@
+services:
+  assistant:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.llm
+    volumes:
+      - ./.env:/app/.env
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./.env
+    networks:
+      - botnet
+
+  ui:
+    build:
+      context: .
+      dockerfile: ./frontend/Dockerfile.ui
+    ports:
+      - "5173:5173"
+    networks:
+      - botnet
+    
+networks:
+  botnet:
+    driver: bridge

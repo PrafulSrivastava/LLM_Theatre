@@ -1,0 +1,13 @@
+python-dotenv>=1.0.1
+PyYAML>=6.0
+pydantic>=2.0
+autogen-core>=0.4.9.2
+autogen-ext[openai]>=0.4.9.2
+autogen-agentchat>=0.4.9.2
+langchain>=0.1
+langchain-community>=0.3.20
+openai>=1.68.2
+tiktoken>=0.4.0
+fastapi>=0.111.0
+uvicorn[standard]
+duckduckgo-search>=5.3.0
