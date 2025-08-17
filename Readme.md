@@ -123,3 +123,6 @@ This will start:
 ## 📜 License
 
 MIT License. See [LICENSE](LICENSE) for details.  
+
+## Sample Screenshots:
+![alt text](image.png)
